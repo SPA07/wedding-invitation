@@ -1,13 +1,15 @@
-import Header from "./components/Header"
-import Home from "./components/Home"
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Location from "./components/Location";
 
 function App() {
 
   return (
     <>
-      <div className='px-5 pt-13'>
+      <div className='p-3'>
         <Header />
         <Home />
+        <Location />
       </div>
     </>
   )
