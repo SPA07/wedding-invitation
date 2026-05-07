@@ -1,6 +1,5 @@
 import Header from "./components/Header"
 import Home from "./components/Home"
-import Timer from "./components/Timer"
 
 function App() {
 
@@ -9,7 +8,6 @@ function App() {
       <div className='px-5 pt-13'>
         <Header />
         <Home />
-        <Timer />
       </div>
     </>
   )
