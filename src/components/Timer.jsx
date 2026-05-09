@@ -57,7 +57,7 @@ const Timer = () => {
       }}
 
     >
-      <h2 className="text-[#BF6A3F]">!Nos casamos!</h2>
+      <h2 className="text-[#BF6A3F]">¡Nos casamos!</h2>
       <div className="flex justify-center items-center gap-4 text-2xl">
         <div className="flex flex-col items-center">
           <span>{days}</span>
