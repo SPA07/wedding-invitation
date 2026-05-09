@@ -1,6 +1,7 @@
-import Timer from './Timer'
-import novios from '../assets/MyS.jpg'
-import plantilla from '../assets/plantilla.svg'
+import Timer from './Timer';
+import novios from '../assets/MyS.jpg';
+import plantilla3 from '../assets/plantilla3.png';
+import tailwind from 'tailwindcss';
 
 const Home = () => {
   return (
@@ -11,18 +12,15 @@ const Home = () => {
       <Timer />
       <div className="relative w-full max-w-4xl mx-auto overflow-hidden mt-5">
         <img
-          src={plantilla}
+          src={plantilla3}
           alt="Plantilla"
           className="block w-full h-auto rounded-lg"
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center p-4 sm:p-8">
-          {/* <h2 className="text-xl sm:text-3xl md:text-4xl text-[#BF6A3F] drop-shadow-sm mb-2">
-            ¡Nos casamos!
-          </h2> */}
-          <p className="text-[#23225a] text-center text-s sm:text-sm md:text-lg leading-relaxed max-w-[80%] md:max-w-[60%]">
-           El amor es la única magia capaz de transformarlo todo, queremos invitarte a celebrar nuestra unión. Acompañanos a dar el paso más importante de nuestras vidas y firmar nuestro 'Siempre'.
+        <div className="absolute inset-0 flex items-center justify-center">
+          <p className="text-(--color-secondary) p-20 text-center text-sm">
+            El amor es la única magia capaz de transformarlo todo, queremos invitarte a celebrar nuestra unión.
+            Acompáñanos a dar el paso más importante de nuestras vidas y firmar nuestro 'Siempre'.
           </p>
-
         </div>
       </div>
     </>

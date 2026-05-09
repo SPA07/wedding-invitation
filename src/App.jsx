@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <div className='p-3'>
+      <div className='p-10 pt-5'>
         <Header />
         <Home />
         <Location />

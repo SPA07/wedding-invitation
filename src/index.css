@@ -1,5 +1,8 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Rouge+Script&display=swap');
+
+
 
 :root {
     --color-primary: #e08152a9;
@@ -10,13 +13,17 @@
 
 @layer base {
     body {
-        /* background-color: #DE946F; */
-        background-color: var(--color-primary);
+        background-image: url('/src/assets/background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
         color: var(--color-alternative);
     }
 
     h1 {
-        font-family: 'Pinyon Script', cursive;
+        font-family: "Ballet", cursive;
+        font-weight: 400;
+        font-style: normal;
     }
 
     h2 {
@@ -24,10 +31,11 @@
         font-size: 1.5rem;
         color: var(--color-alternative);
     }
-}
 
-@layer components {
-    .font-pinyon {
-        font-family: 'Pinyon Script', cursive;
+    p {
+        font-family: "Ballet", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
     }
 }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "motion/react"
+import plantilla3 from '../assets/plantilla3.png';
 
 // Mueve esto dentro o asegúrate de que se ejecute correctamente
 const targetDate = new Date("2026-10-30T18:00:00").getTime();
@@ -41,7 +42,13 @@ const Timer = () => {
   return (
 
     <motion.div
-      className="text-center border-2 border-[#f8f8f8] bg-[#BF6A3F] rounded-lg p-5 mt-5 max-w-md mx-auto"
+      className="text-center bg-[#BF6A3F] rounded-lg mt-5 max-w-md mx-auto text-[#BF6A3F]"
+      style={{
+
+        backgroundImage: `url(${plantilla3})`, 
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+      }}
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
@@ -50,28 +57,22 @@ const Timer = () => {
       }}
 
     >
-      <h2>!Nos casamos!</h2>
+      <h2 className="text-[#BF6A3F]">!Nos casamos!</h2>
       <div className="flex justify-center items-center gap-4 text-2xl">
         <div className="flex flex-col items-center">
           <span>{days}</span>
           <p className="text-sm">Días</p>
         </div>
 
-        <span>|</span>
-
         <div className="flex flex-col items-center">
           <span>{hours}</span>
           <p className="text-sm">Horas</p>
         </div>
 
-        <span>|</span>
-
         <div className="flex flex-col items-center">
           <span>{minutes}</span>
           <p className="text-sm">Minutos</p>
         </div>
-
-        <span>|</span>
 
         <div className="flex flex-col items-center">
           <span>{seconds}</span>
@@ -79,39 +80,6 @@ const Timer = () => {
         </div>
       </div>
     </motion.div>
-
-
-    // <div className="text-center border-2 border-[#f8f8f8] rounded-lg p-5 mt-5 max-w-md mx-auto">
-    //   {/* <h2 className="">Faltan</h2> */}
-
-    //   <div className="flex justify-center items-center gap-4 text-2xl">
-    //     <div className="flex flex-col items-center">
-    //       <span>{days}</span>
-    //       <p className="text-sm">Días</p>
-    //     </div>
-
-    //     <span>|</span>
-
-    //     <div className="flex flex-col items-center">
-    //       <span>{hours}</span>
-    //       <p className="text-sm">Horas</p>
-    //     </div>
-
-    //     <span>|</span>
-
-    //     <div className="flex flex-col items-center">
-    //       <span>{minutes}</span>
-    //       <p className="text-sm">Minutos</p>
-    //     </div>
-
-    //     <span>|</span>
-
-    //     <div className="flex flex-col items-center">
-    //       <span>{seconds}</span>
-    //       <p className="text-sm">Segundos</p>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 
