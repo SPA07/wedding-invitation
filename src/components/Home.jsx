@@ -35,34 +35,33 @@ const Home = () => {
 
   <div className="absolute inset-0 flex flex-col justify-center items-center p-6 text-center">
     
-    <div className="flex flex-col gap-y-8"> 
+    <div className="flex flex-col gap-y-5"> 
       
-      <h1 className="text-(--color-secondary) text-sm italic uppercase tracking-widest opacity-80">
+      <h1 className="text-(--color-secondary) italic tracking-widest font-bold">
         Con la bendición de Dios y nuestros padres
       </h1>
 
       <div className="flex flex-col gap-y-6">
         
         <div className="space-y-1">
-          <h2 className="text-(--color-secondary) font-bold text-[10px] uppercase tracking-tighter">
+          <h2 className="text-(--color-secondary) font-bold text-[13px] tracking-tighter">
             Padres de la novia
           </h2>
           <p className="text-(--color-secondary) text-base leading-tight">
-            María Rosalba Morales Flores <br /> y Gerardo Medina Fernandez
+            María Rosalba Morales Flores <br /> Gerardo Medina Fernandez
           </p>
         </div>
 
         <div className="space-y-1">
-          <h2 className="text-(--color-secondary) font-bold text-[10px] uppercase tracking-tighter">
+          <h2 className="text-(--color-secondary) font-bold text-[13px] tracking-tighter">
             Padres del novio
           </h2>
           <p className="text-(--color-secondary) text-base leading-tight">
-            Elias Pineda Durán <br /> y María del Carmen Arredondo García
+            María del Carmen Arredondo García <br /> Elias Pineda Durán
           </p>
         </div>
 
       </div>
-
     </div>
   </div>
 </div>
