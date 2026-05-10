@@ -26,25 +26,21 @@ const Home = () => {
       </div>
 
       <div className="relative w-full max-w-4xl mx-auto mt-5">
-  {/* Imagen base */}
+
   <img 
     src={plantilla3}
     alt="Plantilla"
-    className="block w-full h-auto min-h-[450px] rounded-lg object-cover"
+    className="block w-full h-auto min-h-112.5 rounded-lg object-cover"
   />
 
-  {/* Overlay corregido */}
   <div className="absolute inset-0 flex flex-col justify-center items-center p-6 text-center">
     
-    {/* Contenedor con GAP: controla la separación total aquí */}
     <div className="flex flex-col gap-y-8"> 
       
-      {/* Frase superior */}
       <h1 className="text-(--color-secondary) text-sm italic uppercase tracking-widest opacity-80">
         Con la bendición de Dios y nuestros padres
       </h1>
 
-      {/* Bloque de Padres (Novia y Novio) con su propia separación interna */}
       <div className="flex flex-col gap-y-6">
         
         <div className="space-y-1">
