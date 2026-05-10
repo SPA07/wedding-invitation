@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <div className='pt-10' >
-        <img src={novios} alt="Montse&Salvador" className="rounded-lg mt-5" />
+        <img src={novios} alt="Montse&Salvador" className="rounded-lg mt-10" />
       </div>
 
       <Timer />
