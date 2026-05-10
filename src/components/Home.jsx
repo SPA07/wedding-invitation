@@ -18,7 +18,7 @@ const Home = () => {
           className="block w-full h-auto rounded-lg"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <p className="text-(--color-secondary) p-20 text-center text-sm">
+          <p className="text-(--color-secondary) p-10 text-center text-sm">
             El amor es la única magia capaz de transformarlo todo, queremos invitarte a celebrar nuestra unión.
             Acompáñanos a dar el paso más importante de nuestras vidas y firmar nuestro 'Siempre'.
           </p>
