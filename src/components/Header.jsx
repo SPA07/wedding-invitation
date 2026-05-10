@@ -4,7 +4,7 @@ import headerImg from '../assets/header.png';
 const Header = () => {
   return (
     /* Barra fija con tu color de fondo original */
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#4f3223] h-20 flex justify-center items-center">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#4f3223f5] h-20 flex justify-center items-center">
       
       {/* Contenedor del Pergamino: Se posiciona relativo a la barra */}
       <div className="relative w-full max-w-lg h-32 flex items-center justify-center">
