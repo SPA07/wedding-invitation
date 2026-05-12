@@ -1,6 +1,8 @@
 import Timer from './Timer';
 import novios from '../assets/MyS.jpg';
+import plantilla2 from '../assets/plantilla2.svg';
 import plantilla3 from '../assets/plantilla3.png';
+import plantilla4 from '../assets/plantilla4.png';
 import iglesia from '../assets/iglesia.avif';
 import jardin from '../assets/jardin.avif';
 import InfoCard from './InfoCard';
@@ -59,7 +61,7 @@ const Home = () => {
       </div>
 
       <InfoCard
-        backgroundImage={plantilla3}
+        backgroundImage={plantilla4}
         minHeight="min-h-90"
         imageClassName="object-cover"
       >
@@ -73,6 +75,9 @@ const Home = () => {
           <p className="text-(--color-secondary) text-sm font-Ballet italic tracking-wide">
             30 Octubre 2026
           </p>
+           <p className="text-(--color-secondary) text-sm font-Ballet italic tracking-wide">
+            6:30 PM
+          </p>
         </div>
         <img
           src={iglesia}
@@ -82,7 +87,7 @@ const Home = () => {
       </InfoCard>
 
       <InfoCard
-        backgroundImage={plantilla3}
+        backgroundImage={plantilla4}
         minHeight="min-h-90"
         imageClassName="object-cover"
       >
@@ -93,9 +98,6 @@ const Home = () => {
           <h3 className="text-(--color-secondary) font-bold text-[13px] tracking-tighter">
             Jardín los campos
           </h3>
-          <p className="text-(--color-secondary) text-sm font-Ballet italic tracking-wide">
-            6:30 PM
-          </p>
         </div>
         <img
           src={jardin}
@@ -104,7 +106,7 @@ const Home = () => {
         />
       </InfoCard>
       
-      <InfoCard backgroundImage={plantilla3}>
+      <InfoCard backgroundImage={plantilla4}>
         <h2 className="text-(--color-secondary) text-xl font-serif italic tracking-widest mb-2">
           Código de vestimenta
         </h2>
@@ -115,6 +117,14 @@ const Home = () => {
         <h3 className="text-(--color-secondary) text-sm font-Ballet italic tracking-wide">
           Vestimenta formal, se reserva el color terracota para las damas de honor
         </h3>
+      </InfoCard>
+      <InfoCard backgroundImage={plantilla3}>
+        <h2 className="text-(--color-secondary) text-xl font-serif italic tracking-widest mb-2">
+          Mesa de regalos
+        </h2>
+        <p className="text-(--color-secondary) text-sm font-Ballet italic tracking-wide">
+          Tu cariño y compañía significan todo para nosotros. Si además deseas tener un detalle, aquí encontrarás nuestra mesa de regalos.
+        </p>
       </InfoCard>
     </>
   )

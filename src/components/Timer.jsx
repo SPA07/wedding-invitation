@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "motion/react"
-import plantilla3 from '../assets/plantilla3.png';
+import plantilla4 from '../assets/plantilla4.png';
 
 // Mueve esto dentro o asegúrate de que se ejecute correctamente
 const targetDate = new Date("2026-10-30T18:00:00").getTime();
@@ -45,7 +45,7 @@ const Timer = () => {
       className="text-center bg-[#BF6A3F] rounded-lg mt-5 max-w-md mx-auto text-[#BF6A3F]"
       style={{
 
-        backgroundImage: `url(${plantilla3})`, 
+        backgroundImage: `url(${plantilla4})`, 
         backgroundSize: "cover",
         backgroundPosition: "center"
       }}

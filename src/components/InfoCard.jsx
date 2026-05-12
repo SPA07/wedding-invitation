@@ -7,7 +7,7 @@ const InfoCard = ({
   imageClassName = ""
 }) => {
   return (
-    <div className="relative w-full max-w-4xl mx-auto mt-5 overflow-hidden">
+    <div className="relative w-full max-w-4xl mx-auto mt-3 overflow-hidden">
       <img
         src={backgroundImage}
         alt="Plantilla"
