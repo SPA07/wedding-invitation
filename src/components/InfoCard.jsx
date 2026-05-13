@@ -1,13 +1,12 @@
-
-
 const InfoCard = ({
   backgroundImage,
   children,
   minHeight = "h-auto",
-  imageClassName = ""
+  imageClassName = "",
+  containerClassName = ""
 }) => {
   return (
-    <div className="relative w-full max-w-4xl mx-auto mt-3 overflow-hidden">
+    <div className={`relative mx-auto mt-3 overflow-hidden ${containerClassName}`}>
       <img
         src={backgroundImage}
         alt="Plantilla"

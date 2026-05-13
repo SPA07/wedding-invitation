@@ -1,11 +1,12 @@
 import Timer from './Timer';
 import novios from '../assets/MyS.jpg';
-import plantilla2 from '../assets/plantilla2.svg';
+import plantilla1 from '../assets/plantilla1.png';
 import plantilla3 from '../assets/plantilla3.png';
 import plantilla4 from '../assets/plantilla4.png';
 import iglesia from '../assets/iglesia.avif';
 import jardin from '../assets/jardin.avif';
 import InfoCard from './InfoCard';
+import GiftButton from './GiftButton';
 import { IconVestido as Vestido, IconTraje as Traje } from './Icons';
 
 const Home = () => {
@@ -75,7 +76,7 @@ const Home = () => {
           <p className="text-(--color-secondary) text-sm font-Ballet italic tracking-wide">
             30 Octubre 2026
           </p>
-           <p className="text-(--color-secondary) text-sm font-Ballet italic tracking-wide">
+          <p className="text-(--color-secondary) text-sm font-Ballet italic tracking-wide">
             6:30 PM
           </p>
         </div>
@@ -105,7 +106,7 @@ const Home = () => {
           className="max-w-[80%] max-h-[50%] h-auto rounded-lg shadow-xl border-4 border-white/20 my-4"
         />
       </InfoCard>
-      
+
       <InfoCard backgroundImage={plantilla4}>
         <h2 className="text-(--color-secondary) text-xl font-serif italic tracking-widest mb-2">
           Código de vestimenta
@@ -118,7 +119,7 @@ const Home = () => {
           Vestimenta formal, se reserva el color terracota para las damas de honor
         </h3>
       </InfoCard>
-      <InfoCard backgroundImage={plantilla3}>
+      <InfoCard backgroundImage={plantilla1}>
         <h2 className="text-(--color-secondary) text-xl font-serif italic tracking-widest mb-2">
           Mesa de regalos
         </h2>
@@ -126,6 +127,56 @@ const Home = () => {
           Tu cariño y compañía significan todo para nosotros. Si además deseas tener un detalle, aquí encontrarás nuestra mesa de regalos.
         </p>
       </InfoCard>
+
+      <div className="flex flex-col">
+        <GiftButton
+          text="Amazon"
+          href="https://amazon.com.mx/..."
+          backgroundImage={plantilla4}
+        />
+
+        <GiftButton
+          text="Liverpool"
+          href="https://mesa.liverpool.com.mx/..."
+          backgroundImage={plantilla4}
+        />
+
+        <GiftButton
+          text="Datos Bancarios"
+          href="#seccion-banco"
+          backgroundImage={plantilla4}
+        />
+      </div>
+
+      <InfoCard
+        backgroundImage={plantilla1}
+        minHeight="min-h-80"
+        imageClassName="object-cover"
+      >
+          <h2 className="text-(--color-secondary) font-serif italic text-center mb-4 mt-4">
+            Confirmar asistencia
+          </h2>
+
+          <p className="text-(--color-secondary) text-sm font-serif text-center mb-2 max-w-[90%]">
+            Estamos muy felices de celebrar este momento contigo y esperamos que puedas acompañarnos.
+            Por favor, haznos saber si podrás asistir a nuestra boda. ¡Nos haría muchísima ilusión verte ahí!
+          </p>
+
+          <div className="w-[80%] flex justify-center"> {/* Contenedor para centrar el botón y controlar su ancho */}
+            <GiftButton
+              text="Llenar Formulario"
+              href="TU_URL_DE_GOOGLE_FORMS_AQUI"
+              backgroundImage={plantilla4}
+            />
+          </div>
+      </InfoCard>
+      {/* <div className="w-full">
+            <GiftButton
+              text="Llenar Formulario"
+              href="TU_URL_DE_GOOGLE_FORMS_AQUI"
+              backgroundImage={plantilla4}
+            />
+          </div> */}
     </>
   )
 }
