@@ -1,7 +1,6 @@
 import Timer from './Timer';
 import Location from './Location';
 import novios from '../assets/MyS.jpg';
-import plantilla1 from '../assets/plantilla1.png';
 import plantilla3 from '../assets/plantilla3.png';
 import plantilla4 from '../assets/plantilla4.png';
 import iglesia from '../assets/iglesia.avif';
@@ -13,7 +12,7 @@ import { IconVestido as Vestido, IconTraje as Traje } from './Icons';
 const Home = () => {
   return (
     <>
-      <div className='pt-10' >
+      <div className='pt-10'>
         <img src={novios} alt="Montse&Salvador" className="rounded-lg mt-2" />
       </div>
 
@@ -32,25 +31,25 @@ const Home = () => {
         imageClassName="object-cover"
       >
         <div className="flex flex-col gap-y-5">
-          <h1 className="text-(--color-secondary) italic tracking-widest font-bold">
+          <h1 className="text-(--color-secondary) font-bold">
             Con la bendición de Dios y nuestros padres
           </h1>
 
           <div className="flex flex-col gap-y-6">
             <div className="space-y-1">
-              <h2 className="text-(--color-secondary) font-bold text-[13px] tracking-tighter">
+              <h2 className="text-(--color-secondary) font-bold text-[13px] tracking-tighter uppercase">
                 Padres de la novia
               </h2>
-              <p className="text-(--color-secondary) text-base leading-tight">
+              <p className="text-(--color-secondary) text-base">
                 María Rosalba Morales Flores <br /> Gerardo Medina Fernandez
               </p>
             </div>
 
             <div className="space-y-1">
-              <h2 className="text-(--color-secondary) font-bold text-[13px] tracking-tighter">
+              <h2 className="text-(--color-secondary) font-bold text-[13px] tracking-tighter uppercase">
                 Padres del novio
               </h2>
-              <p className="text-(--color-secondary) text-base leading-tight">
+              <p className="text-(--color-secondary) text-base">
                 María del Carmen Arredondo García <br /> Elias Pineda Durán
               </p>
             </div>
@@ -67,17 +66,17 @@ const Home = () => {
         minHeight="min-h-90"
         imageClassName="object-cover"
       >
-        <h2 className="text-(--color-secondary) text-xl font-serif italic tracking-widest mb-2">
+        <h2 className="text-(--color-secondary) text-xl mb-2">
           Ceremonia Religiosa
         </h2>
         <div className="space-y-1">
-          <h3 className="text-(--color-secondary) text-lg font-serif italic">
+          <h3 className="text-(--color-secondary) text-lg">
             Capilla San Andrés
           </h3>
-          <p className="text-(--color-secondary) text-sm font-Ballet italic tracking-wide">
+          <p className="text-(--color-secondary) text-sm tracking-wide">
             30 Octubre 2026
           </p>
-          <p className="text-(--color-secondary) text-sm font-Ballet italic tracking-wide">
+          <p className="text-(--color-secondary) text-sm tracking-wide">
             6:30 PM
           </p>
         </div>
@@ -93,11 +92,11 @@ const Home = () => {
         minHeight="min-h-90"
         imageClassName="object-cover"
       >
-        <h2 className="text-(--color-secondary) text-xl font-serif italic tracking-widest mb-2">
+        <h2 className="text-(--color-secondary) text-xl mb-2">
           Recepción
         </h2>
         <div className="space-y-1">
-          <h3 className="text-(--color-secondary) font-bold text-[13px] tracking-tighter">
+          <h3 className="text-(--color-secondary) font-bold text-[13px] tracking-tighter uppercase">
             Jardín los campos
           </h3>
         </div>
@@ -110,72 +109,57 @@ const Home = () => {
 
       <Location />
 
-
       <InfoCard backgroundImage={plantilla4}>
-        <h2 className="text-(--color-secondary) text-xl font-serif italic tracking-widest mb-2">
+        <h2 className="text-(--color-secondary) text-xl mb-2">
           Código de vestimenta
         </h2>
         <div className="flex justify-center gap-10">
           <Traje className="w-20 h-20 text-(--color-secondary)" />
           <Vestido className="w-20 h-20 text-(--color-secondary)" />
         </div>
-        <h3 className="text-(--color-secondary) text-sm font-Ballet italic tracking-wide">
+        <h3 className="text-(--color-secondary) text-sm tracking-wide">
           Vestimenta formal, se reserva el color terracota para las damas de honor
         </h3>
       </InfoCard>
-      <InfoCard backgroundImage={plantilla1}>
-        <h2 className="text-(--color-secondary) text-xl font-serif italic tracking-widest mb-2">
+
+      <InfoCard backgroundImage={plantilla3}>
+        <h2 className="text-(--color-secondary) mb-2">
           Mesa de regalos
         </h2>
-        <p className="text-(--color-secondary) text-sm font-Ballet italic tracking-wide">
+        <p className="text-(--color-secondary) text-sm tracking-wide">
           Tu cariño y compañía significan todo para nosotros. Si además deseas tener un detalle, aquí encontrarás nuestra mesa de regalos.
         </p>
       </InfoCard>
 
-      <div className="flex flex-col">
-        <GiftButton
-          text="Amazon"
-          href="https://amazon.com.mx/..."
-          backgroundImage={plantilla4}
-        />
-
-        <GiftButton
-          text="Liverpool"
-          href="https://mesa.liverpool.com.mx/..."
-          backgroundImage={plantilla4}
-        />
-
-        <GiftButton
-          text="Datos Bancarios"
-          href="#seccion-banco"
-          backgroundImage={plantilla4}
-        />
+      <div className="flex flex-col items-center">
+        <GiftButton text="Amazon" href="..." backgroundImage={plantilla4} />
+        <GiftButton text="Liverpool" href="..." backgroundImage={plantilla4} />
+        <GiftButton text="Datos Bancarios" href="#seccion-banco" backgroundImage={plantilla4} />
       </div>
 
       <InfoCard
-        backgroundImage={plantilla1}
+        backgroundImage={plantilla3}
         minHeight="min-h-80"
         imageClassName="object-cover"
       >
-        <h2 className="text-(--color-secondary) font-serif italic text-center mb-4 mt-4">
+        <h2 className="text-(--color-secondary) text-center mb-2">
           Confirmar asistencia
         </h2>
 
-        <p className="text-(--color-secondary) text-sm font-serif text-center mb-2 max-w-[90%]">
+        <p className="text-(--color-secondary) text-sm text-center mb-6 max-w-[90%]">
           Estamos muy felices de celebrar este momento contigo y esperamos que puedas acompañarnos.
           Por favor, haznos saber si podrás asistir a nuestra boda. ¡Nos haría muchísima ilusión verte ahí!
         </p>
-
-        <div className="w-[80%] flex justify-center"> {/* Contenedor para centrar el botón y controlar su ancho */}
-          <GiftButton
-            text="Llenar Formulario"
-            href="TU_URL_DE_GOOGLE_FORMS_AQUI"
-            backgroundImage={plantilla4}
-          />
-        </div>
       </InfoCard>
+      <div className="w-full flex justify-center">
+        <GiftButton
+          text="Llenar Formulario"
+          href="TU_URL_DE_GOOGLE_FORMS_AQUI"
+          backgroundImage={plantilla4}
+        />
+      </div>
     </>
   )
 }
 
-export default Home
+export default Home;

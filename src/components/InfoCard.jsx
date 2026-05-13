@@ -14,7 +14,7 @@ const InfoCard = ({
       />
 
       {/* Contenedor de Contenido */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+      <div className="absolute inset-0 flex flex-col items-center justify-center p-7 text-center">
         {children}
       </div>
     </div>
