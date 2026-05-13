@@ -1,26 +1,36 @@
-
-import headerImg from '../assets/header.png';
+import { useState, useEffect } from 'react';
 
 const Header = () => {
-  return (
-    /* Barra fija con tu color de fondo original */
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#4f3223f5] h-20 flex justify-center items-center">
-      
-      {/* Contenedor del Pergamino: Se posiciona relativo a la barra */}
-      <div className="relative w-full max-w-lg h-32 flex items-center justify-center">
-        
-        {/* La imagen del pergamino (Sin fondo) */}
-        <img 
-          src={headerImg} 
-          alt="Pergamino" 
-          className="absolute inset-0 w-full h-full object-contain"
-        />
+  const [hasScrolled, setHasScrolled] = useState(false);
 
-        {/* El Texto: Encima de la imagen */}
-        <h1 className="relative z-10 text-center text-xl sm:text-2xl text-[#6f4e37] font-serif pb-2">
-          M & S
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setHasScrolled(true);
+      } else {
+        setHasScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <header 
+      className={`fixed top-0 left-0 right-0 z-50 h-16 flex justify-center items-center transition-all duration-500 ease-in-out ${
+        hasScrolled 
+          ? "bg-[#a24415] shadow-lg"
+          : "bg-transparent"
+      }`}
+    >
+      <div className="relative w-full max-w-lg flex items-center justify-center px-4">
+        {/* Texto con cambio de color sutil para legibilidad */}
+        <h1 className={`text-center text-xl sm:text-2xl font-serif italic tracking-widest transition-colors duration-500 ${
+          hasScrolled ? "text-[#fdfcf0]" : "text-white"
+        }`}>
+          Montse y Salvador
         </h1>
-        
       </div>
     </header>
   );

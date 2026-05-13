@@ -1,4 +1,5 @@
 import Timer from './Timer';
+import Location from './Location';
 import novios from '../assets/MyS.jpg';
 import plantilla1 from '../assets/plantilla1.png';
 import plantilla3 from '../assets/plantilla3.png';
@@ -13,7 +14,7 @@ const Home = () => {
   return (
     <>
       <div className='pt-10' >
-        <img src={novios} alt="Montse&Salvador" className="rounded-lg mt-10" />
+        <img src={novios} alt="Montse&Salvador" className="rounded-lg mt-2" />
       </div>
 
       <Timer />
@@ -107,6 +108,9 @@ const Home = () => {
         />
       </InfoCard>
 
+      <Location />
+
+
       <InfoCard backgroundImage={plantilla4}>
         <h2 className="text-(--color-secondary) text-xl font-serif italic tracking-widest mb-2">
           Código de vestimenta
@@ -153,30 +157,23 @@ const Home = () => {
         minHeight="min-h-80"
         imageClassName="object-cover"
       >
-          <h2 className="text-(--color-secondary) font-serif italic text-center mb-4 mt-4">
-            Confirmar asistencia
-          </h2>
+        <h2 className="text-(--color-secondary) font-serif italic text-center mb-4 mt-4">
+          Confirmar asistencia
+        </h2>
 
-          <p className="text-(--color-secondary) text-sm font-serif text-center mb-2 max-w-[90%]">
-            Estamos muy felices de celebrar este momento contigo y esperamos que puedas acompañarnos.
-            Por favor, haznos saber si podrás asistir a nuestra boda. ¡Nos haría muchísima ilusión verte ahí!
-          </p>
+        <p className="text-(--color-secondary) text-sm font-serif text-center mb-2 max-w-[90%]">
+          Estamos muy felices de celebrar este momento contigo y esperamos que puedas acompañarnos.
+          Por favor, haznos saber si podrás asistir a nuestra boda. ¡Nos haría muchísima ilusión verte ahí!
+        </p>
 
-          <div className="w-[80%] flex justify-center"> {/* Contenedor para centrar el botón y controlar su ancho */}
-            <GiftButton
-              text="Llenar Formulario"
-              href="TU_URL_DE_GOOGLE_FORMS_AQUI"
-              backgroundImage={plantilla4}
-            />
-          </div>
+        <div className="w-[80%] flex justify-center"> {/* Contenedor para centrar el botón y controlar su ancho */}
+          <GiftButton
+            text="Llenar Formulario"
+            href="TU_URL_DE_GOOGLE_FORMS_AQUI"
+            backgroundImage={plantilla4}
+          />
+        </div>
       </InfoCard>
-      {/* <div className="w-full">
-            <GiftButton
-              text="Llenar Formulario"
-              href="TU_URL_DE_GOOGLE_FORMS_AQUI"
-              backgroundImage={plantilla4}
-            />
-          </div> */}
     </>
   )
 }
