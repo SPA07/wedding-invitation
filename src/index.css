@@ -13,21 +13,17 @@
 
 @layer base {
     body {
-        background-image: url('/src/assets/background.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: repeat;
+        background-color: var(--color-primary);
         color: var(--color-alternative);
+        font-family: 'sans-serif';
     }
 
     h1 {
-        font-family: "Ballet", cursive;
         font-weight: 400;
         font-style: normal;
     }
 
     h2 {
-        font-family: 'Pinyon Script', cursive;
         font-size: 1.5rem;
         color: var(--color-alternative);
     }

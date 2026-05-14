@@ -122,7 +122,11 @@ const Home = () => {
         </h3>
       </InfoCard>
 
-      <InfoCard backgroundImage={plantilla3}>
+      <InfoCard
+        backgroundImage={plantilla3}
+        minHeight="min-h-80"
+        imageClassName="object-cover"
+      >
         <h2 className="text-(--color-secondary) mb-2">
           Mesa de regalos
         </h2>
@@ -132,7 +136,7 @@ const Home = () => {
       </InfoCard>
 
       <div className="flex flex-col items-center">
-        <GiftButton text="Amazon" href="..." backgroundImage={plantilla4} />
+        <GiftButton text="Amazon" href="https://www.amazon.com.mx/wedding/share/mys301026" backgroundImage={plantilla4} />
         <GiftButton text="Liverpool" href="..." backgroundImage={plantilla4} />
         <GiftButton text="Datos Bancarios" href="#seccion-banco" backgroundImage={plantilla4} />
       </div>
@@ -153,7 +157,7 @@ const Home = () => {
       </InfoCard>
       <div className="w-full flex justify-center">
         <GiftButton
-          text="Llenar Formulario"
+          text="Confirmar Asistencia"
           href="TU_URL_DE_GOOGLE_FORMS_AQUI"
           backgroundImage={plantilla4}
         />
