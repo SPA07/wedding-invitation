@@ -1,5 +1,3 @@
-// src/components/GiftButton.jsx
-
 const GiftButton = ({
   href,
   text,
@@ -20,7 +18,6 @@ const GiftButton = ({
         href={href}
         target={target}
         rel="noopener noreferrer"
-        /* Cambié py-5 por py-2 para reducir la altura considerablemente */
         className="relative z-10 block text-center text-[#235b76] font-bold text-sm uppercase py-2 tracking-widest no-underline"
       >
         {text}
