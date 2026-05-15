@@ -167,7 +167,7 @@ const Home = () => {
       <div className="w-full flex justify-center">
         <GiftButton
           text="Confirmar Asistencia"
-          href="TU_URL_DE_GOOGLE_FORMS_AQUI"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScGGnV2cI1lWdHW8OFkQsfk_D0MpK7RqZjV1QRoqC7ujvXJew/viewform?usp=publish-editor"
           backgroundImage={plantilla4}
         />
       </div>
