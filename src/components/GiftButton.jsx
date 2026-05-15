@@ -18,7 +18,7 @@ const GiftButton = ({
         href={href}
         target={target}
         rel="noopener noreferrer"
-        className="relative z-10 block text-center text-[#235b76] font-bold text-sm uppercase py-2 tracking-widest no-underline"
+        className="relative z-10 block text-center text-[#a24415] font-bold text-sm uppercase py-2 tracking-widest no-underline"
       >
         {text}
       </a>

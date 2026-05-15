@@ -67,7 +67,7 @@ const Home = () => {
         minHeight="min-h-90"
         imageClassName="object-cover"
       >
-        <h2 className="text-(--color-secondary) text-xl mb-2">
+        <h2 className="text-[#a24415] text-xl mb-2">
           Ceremonia Religiosa
         </h2>
         <div className="space-y-1">
@@ -94,7 +94,7 @@ const Home = () => {
         minHeight="min-h-90"
         imageClassName="object-cover"
       >
-        <h2 className="text-(--color-secondary) text-xl mb-2">
+        <h2 className="text-[#a24415] text-xl mb-2">
           Recepción
         </h2>
         <div className="space-y-1">
@@ -112,7 +112,7 @@ const Home = () => {
       <Location />
 
       <InfoCard backgroundImage={plantilla4}>
-        <h2 className="text-(--color-secondary) text-xl mb-5">
+        <h2 className="text-[#a24415] text-xl mb-5">
           Código de vestimenta
         </h2>
         <div className="flex justify-center gap-10">
@@ -129,7 +129,7 @@ const Home = () => {
         minHeight="min-h-80"
         imageClassName="object-cover"
       >
-        <h2 className="text-(--color-secondary) mb-2">
+        <h2 className="text-[#a24415] mb-2">
           Mesa de regalos
         </h2>
         <p className="text-(--color-secondary) text-sm tracking-wide">
@@ -147,7 +147,7 @@ const Home = () => {
         minHeight="min-h-80"
         imageClassName="object-cover"
       >
-        <h2 className="text-(--color-secondary) text-center mb-2">
+        <h2 className="text-[#a24415] text-center mb-2">
           Confirmar asistencia
         </h2>
 
