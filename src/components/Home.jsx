@@ -30,32 +30,27 @@ const Home = () => {
         minHeight="min-h-112.5"
         imageClassName="object-cover"
       >
-        {/* Agregamos p-11 aquí para que afecte a todo el contenido interno */}
         <div className="flex flex-col gap-y-3 p-11 text-center items-center">
 
-          <h1 className="text-(--color-secondary) text-xl leading-tight">
+          <h1 className="text-(--color-secondary) text-xl leading-tight font-bold">
             Con la bendición de Dios y nuestros padres
           </h1>
 
           <div className="flex flex-col gap-y-6 w-full">
-            {/* PADRES NOVIA */}
             <div className="space-y-1">
               <h2 className="text-(--color-secondary) text-[18px] tracking-tighter">
                 Padres de la novia
               </h2>
-              <p className="text-(--color-secondary) text-sm tracking-wide whitespace-nowrap">
+              <p className="text-(--color-secondary) text-[12px] tracking-wide whitespace-nowrap">
                 María Rosalba Morales Flores <br /> Gerardo Medina Fernandez
               </p>
             </div>
 
-            {/* PADRES NOVIO */}
             <div className="space-y-1">
               <h2 className="text-(--color-secondary) text-[18px] tracking-tighter">
                 Padres del novio
               </h2>
-              {/* Usamos -mx-4 (margen negativo) para recuperar un poco de espacio del p-11 
-            solo para este nombre si la pantalla es muy chica */}
-              <p className="text-(--color-secondary) text-sm tracking-tighter sm:tracking-wide min-w-max -mx-4">
+              <p className="text-(--color-secondary) text-[12px] tracking-tighter sm:tracking-wide min-w-max -mx-4">
                 María del Carmen Arredondo García <br /> Elias Pineda Durán
               </p>
             </div>
@@ -103,7 +98,7 @@ const Home = () => {
           Recepción
         </h2>
         <div className="space-y-1">
-          <h3 className="text-(--color-secondary) font-bold text-[13px] tracking-tighter uppercase">
+          <h3 className="text-(--color-secondary) font-bold text-[13px] tracking-tighter">
             Jardín los campos
           </h3>
         </div>
