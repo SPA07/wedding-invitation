@@ -31,9 +31,9 @@ const Home = () => {
         imageClassName="object-cover"
       >
         {/* Agregamos p-11 aquí para que afecte a todo el contenido interno */}
-        <div className="flex flex-col gap-y-5 p-11 text-center items-center">
+        <div className="flex flex-col gap-y-3 p-11 text-center items-center">
 
-          <h1 className="text-(--color-secondary) text-2xl leading-tight">
+          <h1 className="text-(--color-secondary) text-xl leading-tight">
             Con la bendición de Dios y nuestros padres
           </h1>
 
