@@ -23,7 +23,7 @@ function App() {
       <p className="mt-4 text-2xl font-serif italic text-center px-6">
         "El amor está en los detalles..."
       </p>
-      <span className="text-xs tracking-[0.3em] uppercase mt-2 opacity-60">
+      <span className="text-xs tracking-[0.3em] mt-2 opacity-60">
         Preparando tu invitación
       </span>
     </div>
