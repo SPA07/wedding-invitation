@@ -32,7 +32,7 @@ const Home = () => {
       >
         <div className="flex flex-col gap-y-3 p-11 text-center items-center">
 
-          <h1 className="text-(--color-secondary) text-xl leading-tight font-bold">
+          <h1 className="text-(--color-secondary) text-lg leading-tight font-bold">
             Con la bendición de Dios y nuestros padres
           </h1>
 
@@ -50,7 +50,7 @@ const Home = () => {
               <h2 className="text-(--color-secondary) text-[18px] tracking-tighter">
                 Padres del novio
               </h2>
-              <p className="text-(--color-secondary) text-[12px] tracking-tighter sm:tracking-wide min-w-max -mx-4">
+              <p className="text-(--color-secondary) text-[12px] tracking-tighter sm:tracking-wide min-w-max">
                 María del Carmen Arredondo García <br /> Elias Pineda Durán
               </p>
             </div>
@@ -71,7 +71,7 @@ const Home = () => {
           Ceremonia Religiosa
         </h2>
         <div className="space-y-1">
-          <h3 className="text-(--color-secondary) text-lg">
+          <h3 className="text-(--color-secondary) text-[13px]">
             Capilla San Andrés
           </h3>
           <p className="text-(--color-secondary) text-sm tracking-wide">
