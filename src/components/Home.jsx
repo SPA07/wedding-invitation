@@ -71,7 +71,7 @@ const Home = () => {
           Ceremonia Religiosa
         </h2>
         <div className="space-y-1">
-          <h3 className="text-(--color-secondary) text-[13px]">
+          <h3 className="text-(--color-secondary) text-[13px] italic">
             Capilla San Andrés
           </h3>
           <p className="text-(--color-secondary) text-sm tracking-wide">
@@ -98,7 +98,7 @@ const Home = () => {
           Recepción
         </h2>
         <div className="space-y-1">
-          <h3 className="text-(--color-secondary) font-bold text-[13px] tracking-tighter">
+          <h3 className="text-(--color-secondary) italic text-[13px] tracking-tighter">
             Jardín los campos
           </h3>
         </div>
@@ -139,8 +139,8 @@ const Home = () => {
 
       <div className="flex flex-col items-center">
         <GiftButton text="Amazon" href="https://www.amazon.com.mx/wedding/share/mys301026" backgroundImage={plantilla4} />
-        <GiftButton text="Liverpool" href="..." backgroundImage={plantilla4} />
-        <GiftButton text="Datos Bancarios" href="#seccion-banco" backgroundImage={plantilla4} />
+        <GiftButton text="Liverpool" href="#" backgroundImage={plantilla4} />
+        <GiftButton text="Datos Bancarios" href="/public/Datos_Bancarios.pdf" backgroundImage={plantilla4} />
       </div>
 
       <InfoCard
