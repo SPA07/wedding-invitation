@@ -14,7 +14,7 @@
 
 @layer base {
     body {
-        font-family: "Tangerine", cursive;
+        font-family: "Tangerine";
         font-weight: 700;
         font-style: normal;
         background-color: var(--color-primary);
