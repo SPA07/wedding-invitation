@@ -139,8 +139,7 @@ const Home = () => {
 
       <div className="flex flex-col items-center">
         <GiftButton text="Amazon" href="https://www.amazon.com.mx/wedding/share/mys301026" backgroundImage={plantilla4} />
-        <GiftButton text="Liverpool" href="#" backgroundImage={plantilla4} />
-        <GiftButton text="Datos Bancarios" href="/public/Datos_Bancarios.pdf" backgroundImage={plantilla4} />
+        <GiftButton text="Datos Bancarios" href="/DatosBancarios.pdf" backgroundImage={plantilla4} />
       </div>
 
       <InfoCard
