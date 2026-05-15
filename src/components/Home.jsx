@@ -30,26 +30,32 @@ const Home = () => {
         minHeight="min-h-112.5"
         imageClassName="object-cover"
       >
-        <div className="flex flex-col gap-y-5">
-          <h1 className="text-(--color-secondary) text-2xl">
+        {/* Agregamos p-11 aquí para que afecte a todo el contenido interno */}
+        <div className="flex flex-col gap-y-5 p-11 text-center items-center">
+
+          <h1 className="text-(--color-secondary) text-2xl leading-tight">
             Con la bendición de Dios y nuestros padres
           </h1>
 
-          <div className="flex flex-col gap-y-6">
+          <div className="flex flex-col gap-y-6 w-full">
+            {/* PADRES NOVIA */}
             <div className="space-y-1">
               <h2 className="text-(--color-secondary) text-[18px] tracking-tighter">
                 Padres de la novia
               </h2>
-              <p className="text-(--color-secondary) text-base">
+              <p className="text-(--color-secondary) text-sm tracking-wide whitespace-nowrap">
                 María Rosalba Morales Flores <br /> Gerardo Medina Fernandez
               </p>
             </div>
 
+            {/* PADRES NOVIO */}
             <div className="space-y-1">
               <h2 className="text-(--color-secondary) text-[18px] tracking-tighter">
                 Padres del novio
               </h2>
-              <p className="text-(--color-secondary) text-base">
+              {/* Usamos -mx-4 (margen negativo) para recuperar un poco de espacio del p-11 
+            solo para este nombre si la pantalla es muy chica */}
+              <p className="text-(--color-secondary) text-sm tracking-tighter sm:tracking-wide min-w-max -mx-4">
                 María del Carmen Arredondo García <br /> Elias Pineda Durán
               </p>
             </div>
@@ -61,11 +67,9 @@ const Home = () => {
         <h2 className="text-[#a24415] text-2xl font-bold">¿Dónde?</h2>
       </div>
 
-      {/* CARD 1 */}
       <InfoCard
         backgroundImage={plantilla4}
         minHeight="min-h-90"
-        // Esta clase object-cover es para el FONDO del card, está bien
         imageClassName="object-cover"
       >
         <h2 className="text-(--color-secondary) text-xl mb-2">
@@ -83,16 +87,13 @@ const Home = () => {
           </p>
         </div>
 
-        {/* IMAGEN DE LA IGLESIA CORREGIDA */}
         <img
           src={iglesia}
           alt="Iglesia"
-          // CAMBIOS AQUÍ: w-[190px] h-[130px] y object-cover
           className="w-190px h-130px object-cover rounded-lg shadow-xl border-4 border-white/20 my-4"
         />
       </InfoCard>
 
-      {/* CARD 2 */}
       <InfoCard
         backgroundImage={plantilla4}
         minHeight="min-h-90"
@@ -106,12 +107,9 @@ const Home = () => {
             Jardín los campos
           </h3>
         </div>
-
-        {/* IMAGEN DEL JARDÍN CORREGIDA */}
         <img
           src={jardin}
           alt="Jardín los campos"
-          // CAMBIOS AQUÍ: w-[190px] h-[130px] y object-cover (exactamente iguales)
           className="w-190px h-130px object-cover rounded-lg shadow-xl border-4 border-white/20 my-4"
         />
       </InfoCard>
