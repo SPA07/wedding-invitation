@@ -6,8 +6,6 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulamos una carga de 2 segundos para asegurar que 
-    // las fuentes y el background se procesen bien
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000);
@@ -15,7 +13,6 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  // 1. Pantalla de carga (Spinner)
   if (loading) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#BF6A3F] text-[#e8e8e7]">
@@ -32,8 +29,6 @@ function App() {
     </div>
   );
 }
-
-  // 2. Contenido de la aplicación
   return (
     <>
       <div className='p-10 pt-5'>
