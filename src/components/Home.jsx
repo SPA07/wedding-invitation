@@ -37,7 +37,7 @@ const Home = () => {
 
           <div className="flex flex-col gap-y-6">
             <div className="space-y-1">
-              <h2 className="text-(--color-secondary) font-bold text-[13px] tracking-tighter uppercase">
+              <h2 className="text-(--color-secondary) font-bold text-[15px] tracking-tighter">
                 Padres de la novia
               </h2>
               <p className="text-(--color-secondary) text-base">
@@ -46,7 +46,7 @@ const Home = () => {
             </div>
 
             <div className="space-y-1">
-              <h2 className="text-(--color-secondary) font-bold text-[13px] tracking-tighter uppercase">
+              <h2 className="text-(--color-secondary) font-bold text-[15px] tracking-tighter">
                 Padres del novio
               </h2>
               <p className="text-(--color-secondary) text-base">

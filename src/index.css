@@ -17,9 +17,11 @@
         color: var(--color-alternative);
         font-family: 'sans-serif' normal;
         text-transform: none;
+        font-family: "Damion";
     }
 
     h1 {
+        font-family: "Damion", cursive;
         font-weight: 400;
         font-style: normal;
     }
