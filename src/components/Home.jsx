@@ -31,13 +31,13 @@ const Home = () => {
         imageClassName="object-cover"
       >
         <div className="flex flex-col gap-y-5">
-          <h1 className="text-(--color-secondary) font-bold">
+          <h1 className="text-(--color-secondary)">
             Con la bendición de Dios y nuestros padres
           </h1>
 
           <div className="flex flex-col gap-y-6">
             <div className="space-y-1">
-              <h2 className="text-(--color-secondary) font-bold text-[15px] tracking-tighter">
+              <h2 className="text-(--color-secondary) text-[18px] tracking-tighter">
                 Padres de la novia
               </h2>
               <p className="text-(--color-secondary) text-base">
@@ -46,7 +46,7 @@ const Home = () => {
             </div>
 
             <div className="space-y-1">
-              <h2 className="text-(--color-secondary) font-bold text-[15px] tracking-tighter">
+              <h2 className="text-(--color-secondary) text-[18px] tracking-tighter">
                 Padres del novio
               </h2>
               <p className="text-(--color-secondary) text-base">
