@@ -14,8 +14,8 @@
 
 @layer base {
     body {
-        font-family: "Tangerine";
-        font-weight: 700;
+        font-family: "Tangerine", cursive;
+        font-weight: 400;
         font-style: normal;
         background-color: var(--color-primary);
         color: var(--color-alternative);
@@ -23,7 +23,7 @@
     }
 
     h1 {
-        font-family: "Damion", cursive !important; 
+        font-family: "Damion", cursive !important;
         font-weight: 400;
         font-style: normal;
     }

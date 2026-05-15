@@ -58,12 +58,14 @@ const Home = () => {
       </InfoCard>
 
       <div className="text-center mt-5 flex justify-center flex-col items-center">
-        <h2 className="text-[#6f4e37] text-2xl font-bold">¿Dónde?</h2>
+        <h2 className="text-[#a24415] text-2xl font-bold">¿Dónde?</h2>
       </div>
 
+      {/* CARD 1 */}
       <InfoCard
         backgroundImage={plantilla4}
         minHeight="min-h-90"
+        // Esta clase object-cover es para el FONDO del card, está bien
         imageClassName="object-cover"
       >
         <h2 className="text-(--color-secondary) text-xl mb-2">
@@ -80,13 +82,17 @@ const Home = () => {
             6:30 PM
           </p>
         </div>
+
+        {/* IMAGEN DE LA IGLESIA CORREGIDA */}
         <img
           src={iglesia}
           alt="Iglesia"
-          className="max-w-[80%] max-h-[50%] h-auto rounded-lg shadow-xl border-4 border-white/20 my-4"
+          // CAMBIOS AQUÍ: w-[190px] h-[130px] y object-cover
+          className="w-190px h-130px object-cover rounded-lg shadow-xl border-4 border-white/20 my-4"
         />
       </InfoCard>
 
+      {/* CARD 2 */}
       <InfoCard
         backgroundImage={plantilla4}
         minHeight="min-h-90"
@@ -100,24 +106,27 @@ const Home = () => {
             Jardín los campos
           </h3>
         </div>
+
+        {/* IMAGEN DEL JARDÍN CORREGIDA */}
         <img
           src={jardin}
           alt="Jardín los campos"
-          className="max-w-[80%] max-h-[50%] h-auto rounded-lg shadow-xl border-4 border-white/20 my-4"
+          // CAMBIOS AQUÍ: w-[190px] h-[130px] y object-cover (exactamente iguales)
+          className="w-190px h-130px object-cover rounded-lg shadow-xl border-4 border-white/20 my-4"
         />
       </InfoCard>
 
       <Location />
 
       <InfoCard backgroundImage={plantilla4}>
-        <h2 className="text-(--color-secondary) text-xl mb-2">
+        <h2 className="text-(--color-secondary) text-xl mb-5">
           Código de vestimenta
         </h2>
         <div className="flex justify-center gap-10">
           <Traje className="w-20 h-20 text-(--color-secondary)" />
           <Vestido className="w-20 h-20 text-(--color-secondary)" />
         </div>
-        <h3 className="text-(--color-secondary) text-sm tracking-wide">
+        <h3 className="text-(--color-secondary) text-sm tracking-wide mt-5">
           Vestimenta formal, se reserva el color terracota para las damas de honor
         </h3>
       </InfoCard>
