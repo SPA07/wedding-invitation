@@ -33,25 +33,25 @@ const Home = () => {
         {/* Cambiamos p-11 por py-12 px-2 para liberar espacio a los lados */}
         <div className="flex flex-col gap-y-5 py-12 px-2 text-center items-center w-full">
 
-          <h1 className="text-[#a24415] text-xl font-bold w-[90%] max-w-[500px] leading-tight">
+          <h1 className="text-[#a24415] text-2xl font-bold w-[90%] max-w-\[500px]\ leading-tight">
             Con la bendición de Dios y nuestros padres
           </h1>
 
           <div className="flex flex-col gap-y-8 w-full mt-2">
             <div className="space-y-2">
-              <h2 className="font-ballet text-(--color-secondary) text-2xl tracking-tighter">
+              <h2 className="font-ballet text-(--color-secondary) text-lg tracking-tighter">
                 Padres de la novia
               </h2>
-              <p className="text-(--color-secondary) text-[12px] leading-relaxed">
+              <p className="text-(--color-secondary) text-sm leading-relaxed">
                 María Rosalba Morales Flores <br /> Gerardo Medina Fernandez
               </p>
             </div>
 
             <div className="space-y-2">
-              <h2 className="font-ballet text-(--color-secondary) text-2xl tracking-tighter">
+              <h2 className="font-ballet text-(--color-secondary) text-lg tracking-tighter">
                 Padres del novio
               </h2>
-              <p className="text-(--color-secondary) text-[12px] leading-relaxed">
+              <p className="text-(--color-secondary) text-sm leading-relaxed">
                 María del Carmen Arredondo García <br /> Elias Pineda Durán
               </p>
             </div>
