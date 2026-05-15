@@ -31,7 +31,7 @@ const Home = () => {
         imageClassName="object-cover"
       >
         <div className="flex flex-col gap-y-5">
-          <h1 className="text-(--color-secondary)">
+          <h1 className="text-(--color-secondary) text-2xl">
             Con la bendición de Dios y nuestros padres
           </h1>
 
