@@ -42,7 +42,7 @@ const Home = () => {
               <h2 className="font-ballet text-(--color-secondary) text-2xl tracking-tighter">
                 Padres de la novia
               </h2>
-              <p className="text-(--color-secondary) text-sm leading-relaxed">
+              <p className="text-(--color-secondary) text-[12px] leading-relaxed">
                 María Rosalba Morales Flores <br /> Gerardo Medina Fernandez
               </p>
             </div>
@@ -51,7 +51,7 @@ const Home = () => {
               <h2 className="font-ballet text-(--color-secondary) text-2xl tracking-tighter">
                 Padres del novio
               </h2>
-              <p className="text-(--color-secondary) text-sm leading-relaxed">
+              <p className="text-(--color-secondary) text-[12px] leading-relaxed">
                 María del Carmen Arredondo García <br /> Elias Pineda Durán
               </p>
             </div>
