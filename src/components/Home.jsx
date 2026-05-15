@@ -85,7 +85,7 @@ const Home = () => {
         <img
           src={iglesia}
           alt="Iglesia"
-          className="w-190px h-130px object-cover rounded-lg shadow-xl border-4 border-white/20 my-4"
+          className="w-190px h-130px object-cover rounded-lg shadow-xl border-4 border-[#c46739] my-4"
         />
       </InfoCard>
 
@@ -105,7 +105,7 @@ const Home = () => {
         <img
           src={jardin}
           alt="Jardín los campos"
-          className="w-190px h-130px object-cover rounded-lg shadow-xl border-4 border-white/20 my-4"
+          className="w-190px h-130px object-cover rounded-lg shadow-xl border-4 border-[#c46739] my-4"
         />
       </InfoCard>
 
