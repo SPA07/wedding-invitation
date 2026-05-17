@@ -3,8 +3,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 
 function App() {
-  const [loading, setLoading] = useState(() => {
-  });
+  const [loading, setLoading] = useState((true))
 
   useEffect(() => {
     if (loading) {
