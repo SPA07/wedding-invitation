@@ -4,15 +4,12 @@ import Home from "./components/Home";
 
 function App() {
   const [loading, setLoading] = useState(() => {
-    const hasVisited = localStorage.getItem("hasVisited");
-    return hasVisited ? false : true;
   });
 
   useEffect(() => {
     if (loading) {
       const timer = setTimeout(() => {
         setLoading(false);
-        localStorage.setItem("hasVisited", "true");
       }, 2000);
 
       return () => clearTimeout(timer);
