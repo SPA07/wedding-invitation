@@ -42,7 +42,7 @@ const Timer = () => {
   return (
 
     <motion.div
-      className="text-center bg-[#BF6A3F] rounded-lg mt-5 max-w-md mx-auto text-[#BF6A3F]"
+      className="text-center bg-[#BF6A3F] rounded-lg mt-2 max-w-md mx-auto text-[#BF6A3F]"
       style={{
 
         backgroundImage: `url(${plantilla4})`, 

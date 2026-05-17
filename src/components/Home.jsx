@@ -1,6 +1,7 @@
 import Timer from './Timer';
 import Location from './Location';
-import novios from '../assets/MyS.jpg';
+import babychava from '../assets/images/babychava.webp';
+import babymontse from '../assets/images/babymontse.webp';
 import plantilla3 from '../assets/plantilla3.png';
 import plantilla4 from '../assets/plantilla4.png';
 import iglesia from '../assets/iglesia.avif';
@@ -12,8 +13,32 @@ import { IconVestido as Vestido, IconTraje as Traje } from './Icons';
 const Home = () => {
   return (
     <>
-      <div className='pt-10'>
-        <img src={novios} alt="Montse&Salvador" className="rounded-lg mt-2" />
+      <div className="pt-15 pb-6 flex justify-center items-center overflow-visible px-4">
+        <div className="relative flex justify-center items-center gap-2 sm:gap-4 max-w-360px sm:max-w-420px w-full">
+
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-3 w-14 h-4 bg-amber-100/70 backdrop-blur-[1px] -rotate-3 border border-dashed border-amber-200/40 shadow-sm z-30 pointer-events-none" />
+
+          <div className="w-[47%] bg-white p-2 pb-4 rounded-sm shadow-xl border border-gray-100 -rotate-3 hover:rotate-0 transition-transform duration-300 z-10">
+            <div className="w-full aspect-3/4 overflow-hidden bg-gray-50 rounded-xs">
+              <img
+                src={babychava}
+                alt="Salvador de niño"
+                className="w-full h-full object-cover grayscale-10%"
+              />
+            </div>
+
+          </div>
+
+          <div className="w-[47%] bg-white p-2 pb-4 rounded-sm shadow-xl border border-gray-100 rotate-3 hover:rotate-0 transition-transform duration-300 z-20">
+            <div className="w-full aspect-3/4 overflow-hidden bg-gray-50 rounded-xs">
+              <img
+                src={babymontse}
+                alt="Montse de niña"
+                className="w-full h-full object-cover grayscale-5%"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       <Timer />
@@ -30,7 +55,7 @@ const Home = () => {
         minHeight="min-h-112.5"
         imageClassName="object-cover"
       >
-        {/* Cambiamos p-11 por py-12 px-2 para liberar espacio a los lados */}
+
         <div className="flex flex-col gap-y-5 py-12 px-2 text-center items-center w-full">
 
           <h1 className="text-[#a24415] text-xl font-bold w-[90%] max-w-\[500px]\ leading-tight">
