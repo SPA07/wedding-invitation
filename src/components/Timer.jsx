@@ -61,22 +61,22 @@ const Timer = () => {
       <div className="flex justify-center items-center gap-4 text-2xl">
         <div className="flex flex-col items-center">
           <span>{days}</span>
-          <p className="text-sm">Días</p>
+          <p className="text-sm italic">Días</p>
         </div>
 
         <div className="flex flex-col items-center">
           <span>{hours}</span>
-          <p className="text-sm">Horas</p>
+          <p className="text-sm italic">Horas</p>
         </div>
 
         <div className="flex flex-col items-center">
           <span>{minutes}</span>
-          <p className="text-sm">Minutos</p>
+          <p className="text-sm italic">Minutos</p>
         </div>
 
         <div className="flex flex-col items-center">
           <span>{seconds}</span>
-          <p className="text-sm">Segundos</p>
+          <p className="text-sm italic">Segundos</p>
         </div>
       </div>
     </motion.div>

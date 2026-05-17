@@ -44,8 +44,8 @@ const Home = () => {
       <Timer />
 
       <InfoCard backgroundImage={plantilla3}>
-        <p className="text-(--color-secondary) p-4 sm:p-10 text-center text-sm">
-          El amor es la única magia capaz de transformarlo todo, queremos invitarte a celebrar nuestra unión.
+        <p className="text-(--color-secondary) p-4 sm:p-10 text-center text-sm italic">
+          Sabemos que el amor es la única magia capaz de transformarlo todo, queremos invitarte a celebrar nuestra unión.
           Acompáñanos a dar el paso más importante de nuestras vidas y firmar nuestro 'Siempre'.
         </p>
       </InfoCard>
@@ -62,12 +62,12 @@ const Home = () => {
             Con la bendición de Dios y nuestros padres
           </h1>
 
-          <div className="flex flex-col gap-y-8 w-full mt-2">
-            <div className="space-y-2">
+          <div className="flex flex-col gap-y-4 w-full mt-2">
+            <div className="space-y-1">
               <h2 className="font-ballet text-(--color-secondary) text-lg tracking-tighter">
                 Padres de la novia
               </h2>
-              <p className="text-(--color-secondary) text-sm leading-relaxed">
+              <p className="text-(--color-secondary) text-sm leading-relaxed italic">
                 María Rosalba Morales Flores <br /> Gerardo Medina Fernandez
               </p>
             </div>
@@ -76,7 +76,7 @@ const Home = () => {
               <h2 className="font-ballet text-(--color-secondary) text-lg tracking-tighter">
                 Padres del novio
               </h2>
-              <p className="text-(--color-secondary) text-sm leading-relaxed">
+              <p className="text-(--color-secondary) text-sm leading-relaxed italic">
                 María del Carmen Arredondo García <br /> Elias Pineda Durán
               </p>
             </div>
@@ -97,13 +97,13 @@ const Home = () => {
           Ceremonia Religiosa
         </h2>
         <div className="space-y-1">
-          <h3 className="text-(--color-secondary) text-[13px] italic">
+          <h3 className="text-(--color-secondary) text-[13px] font-bold italic">
             Capilla San Andrés
           </h3>
-          <p className="text-(--color-secondary) text-sm tracking-wide">
+          <p className="text-(--color-secondary) text-[12px] tracking-wide">
             30 Octubre 2026
           </p>
-          <p className="text-(--color-secondary) text-sm tracking-wide">
+          <p className="text-(--color-secondary) text-[12px] tracking-wide">
             6:30 PM
           </p>
         </div>
@@ -124,7 +124,7 @@ const Home = () => {
           Recepción
         </h2>
         <div className="space-y-1">
-          <h3 className="text-(--color-secondary) italic text-[13px] tracking-tighter">
+          <h3 className="text-(--color-secondary) italic text-[13px] font-bold tracking-tighter">
             Jardín los campos
           </h3>
         </div>
@@ -145,7 +145,7 @@ const Home = () => {
           <Traje className="w-20 h-20 text-(--color-secondary)" />
           <Vestido className="w-20 h-20 text-(--color-secondary)" />
         </div>
-        <h3 className="text-(--color-secondary) text-sm tracking-wide mt-5">
+        <h3 className="text-(--color-secondary) text-sm tracking-wide mt-5 italic">
           Vestimenta formal, se reserva el color terracota para las damas de honor
         </h3>
       </InfoCard>
@@ -158,7 +158,7 @@ const Home = () => {
         <h2 className="text-[#a24415] mb-2">
           Mesa de regalos
         </h2>
-        <p className="text-(--color-secondary) text-sm tracking-wide">
+        <p className="text-(--color-secondary) text-sm tracking-wide italic">
           Tu cariño y compañía significan todo para nosotros. Si además deseas tener un detalle, aquí encontrarás nuestra mesa de regalos.
         </p>
       </InfoCard>
@@ -177,7 +177,7 @@ const Home = () => {
           Confirmar asistencia
         </h2>
 
-        <p className="text-(--color-secondary) text-sm text-center mb-6 max-w-[90%]">
+        <p className="text-(--color-secondary) text-sm text-center mb-6 max-w-[90%] italic">
           Estamos muy felices de celebrar este momento contigo y esperamos que puedas acompañarnos.
           Por favor, haznos saber si podrás asistir a nuestra boda. ¡Nos haría muchísima ilusión verte ahí!
         </p>
