@@ -1,11 +1,26 @@
+import { useInView } from 'react-intersection-observer';
+
 const GiftButton = ({
   href,
   text,
   backgroundImage,
-  target = "_blank"
+  target = "_blank",
+  delay = "delay-0"
 }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.15,
+  });
+
   return (
-    <div className="relative w-full max-w-md mx-auto mt-2 overflow-hidden rounded-lg shadow-md group transition-transform duration-200 active:scale-95">
+    <div
+      ref={ref}
+      className={`relative w-full max-w-md mx-auto mt-2 overflow-hidden rounded-lg shadow-md group transition-all duration-1000 ease-out active:scale-95 ${delay} ${
+        inView 
+          ? 'opacity-100 translate-y-0 filter blur-none' 
+          : 'opacity-0 translate-y-12 filter blur-[2px]'
+      }`}
+    >
       <img
         src={backgroundImage}
         alt={`Fondo ${text}`}
